@@ -1,0 +1,3 @@
+﻿  ex.cpp
+C:\Users\User\Desktop\Programming\Practice\02\C++\ex\ex\ex.cpp(6,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  ex.vcxproj -> C:\Users\User\Desktop\Programming\Practice\02\C++\ex\Debug\ex.exe
