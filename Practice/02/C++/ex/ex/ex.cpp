@@ -7,8 +7,8 @@ int main() {
 
 	double d1 = 3;
 	double d2 = 3.14;
-	cout << i1 << ' ' << i2 << endl;
-	cout << d1 << ' ' << d2;
+	cout << i1 << endl << i2 << endl;
+	cout << d1 << endl << d2;
 
 
 }

@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int a, b;
+    double a, b;
     cin >> a;
     cin >> b;
     a = a - b;
@@ -14,11 +14,13 @@ int main()
     cout << "b = " << b << endl;
 
 
-// второй способ
-// int = t;
-// t = a;
-// a = b;
-// b = t;
+
+    double t;
+	t = a;
+    a = b;
+    b = t;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
 
 
 }
