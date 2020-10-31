@@ -48,13 +48,13 @@ def last(cord: list):
         ret += 1
     return ret
 
-y,x = map(int, input().split())
+y,x = map(int, input('столбец строка: ').split())
 cord = []
 dl = 0
-d = 0
+res = ''
 if x>0 and x<len(maze[0]) and y>0 and y<len(maze):
-    while F() and d != 1000 and x>0 and x<len(maze[0]) and y>0 and y<len(maze):
-        d += 1
+    while F() and x>0 and x<=len(maze) and y>0 and y<(len(maze[0])):
+
 
         if maze[x][y + 1] == ' ':
             cord.append([x, y])
@@ -71,25 +71,19 @@ if x>0 and x<len(maze[0]) and y>0 and y<len(maze):
 
 
 
-
-
-
-
-
-
-
-
         if maze[x][y + 1] == 'C' or maze[x][y + 1] == 'F':
-            print(maze[x][y+1], end= ' ')
-            maze[x] = maze[x][:y] + '#'
+
+            res += maze[x][y + 1] + ' '
+            maze[x] = maze[x][:y+1] + '#'
+
         if maze[x][y - 1] == 'A':
-            print(maze[x][y-1], end= ' ')
+            res += maze[x][y-1] + ' '
             maze[x] = '#' + maze[x][y:]
         if maze[x-1][y] == 'B':
-            print(maze[x-1][y], end= ' ')
+            res += maze[x-1][y] + ' '
             maze[x-1] = maze[x-1][:y] + '#' + maze[x-1][y + 1:]
         if maze[x+1][y] == 'E' or maze[x+1][y] == 'D':
-            print(maze[x+1][y], end= ' ')
+            res += maze[x+1][y] + ' '
             maze[x+1] = maze[x+1][:y] + '#' + maze[x+1][y + 1:]
 
         if maze[x][y + 1] == ' ':
@@ -119,10 +113,25 @@ if x>0 and x<len(maze[0]) and y>0 and y<len(maze):
 
         if maze[x-1][y] != ' ' and maze[x+1][y] != ' ' and maze[x][y-1] != ' ' and maze[x][y+1] != ' ' and maze[x][y] != ' ':
             if cord != []:
-                if last(cord[-1]):
-                    x, y = cord[-1]
-                else: cord.pop()
+                x, y = cord[0]
+                if maze[x-1][y] != ' ' and maze[x+1][y] != ' ' and maze[x][y-1] != ' ' and maze[x][y+1] != ' ' and maze[x][y] != ' ':
+                    del cord[0]
+
 
             else: break
-print('',end ='\n')
-print(*maze, sep='\n')
+    if res == '':
+        print('выхода нет')
+    else: print(res)
+else: print('Не верные кординаты')
+
+
+
+
+
+
+
+
+
+
+
+

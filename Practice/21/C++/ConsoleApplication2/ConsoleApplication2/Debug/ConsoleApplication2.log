@@ -1,0 +1,3 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\User\Desktop\Programming\Practice\21\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(6,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  ConsoleApplication2.vcxproj -> C:\Users\User\Desktop\Programming\Practice\21\C++\ConsoleApplication2\Debug\ConsoleApplication2.exe
