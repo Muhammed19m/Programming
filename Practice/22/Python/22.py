@@ -52,7 +52,7 @@ y,x = map(int, input('столбец строка: ').split())
 cord = []
 dl = 0
 res = ''
-if x>0 and x<len(maze[0]) and y>0 and y<len(maze):
+if x>0 and x<len(maze[0]) and y>0 and y<len(maze) and maze[x][y] != '#':
     while F() and x>0 and x<=len(maze) and y>0 and y<(len(maze[0])):
 
 
