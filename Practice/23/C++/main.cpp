@@ -17,5 +17,7 @@ int main()
 	cout<<setprecision(4);
 	for (double x = 0; x<pi/4;x+=pi/180)
 		cout<<x<<'\t'<<sin(x, 5)<<endl;
-	
+	cout<<endl<<'k'<<'\t'<<"C(k, 10)"<<endl;
+	for (int k = 1; k<=10;k++)
+		cout<<k	<<'\t'<<soch(k, 10)<<endl;
 }
