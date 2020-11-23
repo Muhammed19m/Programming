@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Programming\Lab\лаб1\main\main\main.cpp(103,26): warning C4244: =: преобразование "time_t" в "int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Lab\лаб1\main\main\main.cpp(71): warning C4715: get_weather_json: значение возвращается не при всех путях выполнения
+C:\Users\User\Desktop\Programming\Lab\лаб1\main\main\main.cpp(44): warning C4715: get_time_json: значение возвращается не при всех путях выполнения
+  main.vcxproj -> C:\Users\User\Desktop\Programming\Lab\лаб1\main\Debug\main.exe
