@@ -1,0 +1,5 @@
+﻿  ex25.cpp
+C:\Users\User\Desktop\Programming\Practice\25\C++\ex25\ex25\ex25.cpp(19,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\25\C++\ex25\ex25\ex25.cpp(33,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\25\C++\ex25\ex25\ex25.cpp(63,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  ex25.vcxproj -> C:\Users\User\Desktop\Programming\Practice\25\C++\ex25\Debug\ex25.exe

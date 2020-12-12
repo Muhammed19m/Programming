@@ -1,0 +1,8 @@
+﻿  ex26.cpp
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(22,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(64,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(22,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(79): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<int>> BozoSort<int>(std::vector<int,std::allocator<int>>,bool)"
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(38,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\ex26\ex26.cpp(81): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<int>> BozoSort<int>(std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> &,bool)"
+  ex26.vcxproj -> C:\Users\User\Desktop\Programming\Practice\26\C++\ex26\Debug\ex26.exe
