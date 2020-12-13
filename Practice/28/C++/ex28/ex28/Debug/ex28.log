@@ -1,0 +1,6 @@
+﻿  ex28.cpp
+C:\Users\User\Desktop\Programming\Practice\28\C++\ex28\ex28\ex28.cpp(14,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\28\C++\ex28\ex28\ex28.cpp(20,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\28\C++\ex28\ex28\ex28.cpp(44,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\28\C++\ex28\ex28\ex28.cpp(53,21): warning C4018: <: несоответствие типов со знаком и без знака
+  ex28.vcxproj -> C:\Users\User\Desktop\Programming\Practice\28\C++\ex28\Debug\ex28.exe

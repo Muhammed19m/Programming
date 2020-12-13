@@ -1,6 +1,6 @@
 ﻿  ex27.cpp
-C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(7,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(29,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(38,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(43,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(22,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(31,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(32,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\ex27\ex27.cpp(39,21): warning C4018: <: несоответствие типов со знаком и без знака
   ex27.vcxproj -> C:\Users\User\Desktop\Programming\Practice\27\C++\ex27\Debug\ex27.exe
