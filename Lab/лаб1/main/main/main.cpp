@@ -19,6 +19,14 @@ void replace_in_html(string &str, string what_replace, string on) {
     }
 }
 
+void c_w_json(json str) {
+    ofstream cache_file("cache.json");
+    if (cache_file.is_open()) {
+        cache_file << str;
+        cache_file.close();
+    }
+}
+
 
 json get_time_json() {
     // Создаём клиент и привязываем к домену. Туда пойдут наши запросы
@@ -57,7 +65,7 @@ json get_weather_json() {
         if (res->status == 200) {
             // В res->body лежит string с ответом сервера
             json res_j = json::parse(res->body);
-                               
+            c_w_json(res_j);
             return res_j;
         }
         else {
@@ -67,11 +75,12 @@ json get_weather_json() {
     else {
         auto err = res.error();
         std::cout << "Error code: " << err << std::endl;
-    }
+    }  
 }
 
 json get_cache() {
     json cache;
+
     ifstream r_cache("cache.json");
     if (r_cache.is_open()) {
         string str;
@@ -83,15 +92,7 @@ json get_cache() {
     }
     else return { "error" };
 }
-bool c_w_json(json str) {
-    ofstream cache_file("cache.json");
-    if (cache_file.is_open()) {
-        cache_file << str;
-        cache_file.close();
-        return true;
-    }
-    return false;
-}
+
 
 json get_hour(json j) {
     json hour;
@@ -162,7 +163,6 @@ void gen_response(const Request& req, Response& res) {
 
 
 void gen_response_raw(const Request& req, Response& res) {
-
     json body = get_cache();
     json end;
     end["temp"] = to_string(int(round(body["hourly"][0]["temp"].get<double>())));
