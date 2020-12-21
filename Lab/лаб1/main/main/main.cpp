@@ -153,7 +153,6 @@ void gen_response(const Request& req, Response& res) {
     }
 
     json n = get_weather_json();   
-    cout << n;
     replace_in_html(str, "{hourly[i].weather[0].description}", n["hourly"][0]["weather"][0]["description"]);
     replace_in_html(str, "{hourly[i].weather[0].icon}", n["hourly"][0]["weather"][0]["icon"]);
     replace_in_html(str, "{hourly[i].temp}", to_string(int(std::round(n["hourly"][0]["temp"].get<double>()))));
@@ -165,7 +164,6 @@ void gen_response(const Request& req, Response& res) {
 void gen_response_raw(const Request& req, Response& res) {
 
     json body = get_cache();
-    cout << body;
     json end;
     end["temp"] = to_string(int(round(body["hourly"][0]["temp"].get<double>())));
     end["description"] = body["hourly"][0]["weather"][0]["description"];
