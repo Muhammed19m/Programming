@@ -1,0 +1,23 @@
+﻿  ex29.cpp
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(21,8): error C3861: time: идентификатор не найден
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(21,12): message : "time": объявление функции должно быть доступно, так как ни один из аргументов не зависит от параметра шаблона
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(90,29): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(90,29): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(91,27): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(91,27): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(92,29): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(92,29): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(93,29): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(93,29): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(94,27): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(94,27): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(95,27): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(95,27): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(96,27): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(96,27): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(97,27): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(97,27): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(98,29): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(98,29): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(99,30): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "Student"
+C:\Users\User\Desktop\Programming\Practice\29\C++\ex29\ex29\ex29.cpp(99,30): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
