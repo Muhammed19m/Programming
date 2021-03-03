@@ -1,0 +1,13 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(21,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(74,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(74,57): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(76,44): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(76,75): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(10,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(76): message : выполняется компиляция ссылки на экземпляр шаблон функции "int F<bool(__cdecl *)(char,std::string)>(std::vector<std::string,std::allocator<std::string>>,T)"
+          with
+          [
+              T=bool (__cdecl *)(char,std::string)
+          ]
+  ConsoleApplication2.vcxproj -> C:\Users\User\Desktop\Programming\Practice\22\C++\ConsoleApplication2\Debug\ConsoleApplication2.exe

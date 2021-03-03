@@ -1,6 +1,12 @@
 n = int(input())
-if (n%2!=0 and n%3!=0 and n%5!=0 and n%7!=0) or (n in [2, 3, 5, 7]):
+
+def F(k: int):
+    for i in range(2, int(k**(1/2))+2):
+        if k%i == 0:
+            return False
+    return True
+
+if F(n) or (n in [2,3,5,7]):
     print('простое')
 else:
     print('составное')
-input()

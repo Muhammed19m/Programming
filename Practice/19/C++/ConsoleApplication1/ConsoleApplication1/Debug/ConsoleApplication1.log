@@ -1,3 +1,7 @@
 ﻿  ConsoleApplication1.cpp
-MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ _main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ).
-C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\Debug\ConsoleApplication1.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,28): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(68,13): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(83,22): warning C4018: <: несоответствие типов со знаком и без знака
+  ConsoleApplication1.vcxproj -> C:\Users\User\Desktop\Programming\Practice\19\C++\ConsoleApplication1\Debug\ConsoleApplication1.exe

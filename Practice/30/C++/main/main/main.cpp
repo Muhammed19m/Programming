@@ -1,0 +1,14 @@
+﻿
+#include <iostream>
+
+int main()
+{
+
+
+
+
+
+
+
+
+}

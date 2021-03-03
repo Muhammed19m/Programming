@@ -1,3 +1,4 @@
+
 <p align="center">МИНИСТЕРСТВО НАУКИ  И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
 Федеральное государственное автономное образовательное учреждение высшего образования<br>
 "КРЫМСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ им. В. И. ВЕРНАДСКОГО"<br>
@@ -37,7 +38,7 @@
 ## Выполнение работы
 
 Для начала был зарегистрирован аккаунт openwheatermap.org. Создали API ключ:
-79098fcb5f0dc19e0d40cf2a2d95fefc.
+22389633fb751386c21964f218.
 
 Далее по тренировались с запросами.
 
@@ -47,7 +48,7 @@
 Запрос для сервера погоды включает в себя город, время которого необходимо получить: http://worldtimeapi.org/api/timezone/Europe/Simferopol
 
 Исходный код сервера:
-
+```
 #include <iostream>
 #include "cpp-httplib/httplib.h"
 #include "nlohmann/json.hpp"
@@ -62,9 +63,9 @@ using namespace std;
 
 
 void replace_in_html(string &str, string what_replace, string on) {
-    size_t a = str.find(what_replace);
+	size_t a = str.find(what_replace);
     while (a != std::string::npos) {
-        str.replace(a, what_replace.size(), on);
+	    str.replace(a, what_replace.size(), on);
         a = str.find(what_replace, a + on.size());
     }
 }
@@ -92,9 +93,6 @@ json get_time_json() {
         std::cout << "Error code: " << err << std::endl;
     }
 }
-
-
-
 
 json get_weather_json() {
     // Создаём клиент и привязываем к домену. Туда пойдут наши запросы
@@ -161,8 +159,6 @@ json get_hour(json j) {
     } return time;
 }
 
-
-
 void gen_response(const Request& req, Response& res) {
     json body = get_cache();
     json weather;
@@ -180,14 +176,6 @@ void gen_response(const Request& req, Response& res) {
     }
     
     weather = get_hour(body["hourly"]);
-    
-
-    
-    
-    
-    
-   
-
     ifstream op_html;
     op_html.open("index.html");
     string str;
@@ -210,7 +198,6 @@ void gen_response(const Request& req, Response& res) {
     res.set_content(str, "text,html");
 }
 
-
 void gen_response_raw(const Request& req, Response& res) {
 
     json body = get_cache();
@@ -221,8 +208,6 @@ void gen_response_raw(const Request& req, Response& res) {
 
 }
 
-
-
 int main() {
     //get_weather_json();
     Server svr;                    // Создаём сервер (пока-что не запущен)
@@ -231,14 +216,47 @@ int main() {
     std::cout << "Start server... OK\n";
     svr.listen("localhost", 3000); // Запускаем сервер на localhost и порту 1234
 }
+```
+Исходный код клиента на python:
+```
+import requests as rq
+from tkinter import *
+import json
+js = rq.get("http://localhost:3000/raw")
+
+jsono = json.loads(js.text)
+root = Tk()
+root.pack_propagate(0)
+root.title("Погода сейчас")
+root.geometry("200x250")
+
+up = Frame(root, bg="#ffb84d")
+up2 = Frame(root, bg="#ffb84d")
+
+up.pack(side=TOP, fill=X)
+up2.pack(side=TOP, fill=X)
+
+city = Label(up, font=("Calibri Bold", 12), text=f"Симферополь", bg="#ffb84d")
+type_w = Label(up2, font=("Calibri", 12), text=jsono['description'], bg="#ffb84d")
+temp = Label(root, font=("Calibri",64), text=jsono["temp"]+"°C")
+d = Frame(root, bg="#ffb84d", width=200, height=64)
+temp.pack()
+type_w.pack()
+city.pack(pady=0)
+d.pack(expand=True)
+root.mainloop()
+
+```
 
 
 
-![](./img/client.png)
+
+<img align="![](./img/client.png)">
 <h5 align="center">Рисунок 1: Скриншот клиента.</h5>
 
-![](./img/widget.png)
+<img align="![](./img/widget.png)">
 <h5 align="center">Рисунок 2: Скриншот виджета.</h5>
+
 ## Вывод по работе. 
 - Создали сервер на языке С++, обращающегося к openweathermap.com и возвращающий виджет или описание и температуру в формате json
 - Приложение с графическим интерфейсом, написанное на языке Python с использованием библиотеки Tkinter, получающее и обрабатывающее данные из сервера.
